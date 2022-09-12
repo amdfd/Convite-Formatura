@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Convite de Formatura da T56</title>
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="container">
+    <div class="header">
+      <div>
+        <img src="./assets/logoorkut.svg" alt="">
+      </div>
+      <div class="menu">
+        <ul class="menu-ul">
+          <li><a href="https://pt.wikipedia.org/wiki/Orkut" target="_blank">Home</a></li>
+          <li><a href="https://www.techtudo.com.br/listas/2020/03/orkut-voltou-cinco-coisas-sobre-site-brasileiro-que-revive-rede-social.ghtml" target="_blank">Perfil</a></li>
+          <li><a href="https://www.techtudo.com.br/listas/2018/01/dez-coisas-que-todo-mundo-usava-no-orkut.ghtml" target="_blank">Scraps</a></li>
+          <li><a href="https://gizmodo.uol.com.br/10-comunidades-que-recriam-o-espirito-do-orkut/" target="_blank">Comunidades</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <img name="slide">
+      <div class="invitation">
+        <h2>Formatura da Turma 56!</h2>
+        <a href="https://generationinitiative.zoom.us/my/geandro">+ Participar do evento</a>
+        <div>
+          <ul>
+            <li>
+              <p><b>idioma:</b> Português (Brasil)</p>
+            </li>
+            <li>
+              <p><b>categoria:</b> Tecnologia da Informação</p>
+            </li>
+            <li>
+              <p><b>tipo:</b> público</p>
+            </li>
+            <li>
+              <p><b>visível por:</b> público</p>
+            </li>
+            <li>
+              <p class="link-color">ocultar perfil</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <p><b>criada em:</b> 21/06/2022</p>
+            </li>
+            <li>
+              <p><b>local:</b> Zoom - Sala do Geandro</p>
+            </li>
+            <li>
+              <p><b>proprietário: </b><span class="link-color">Generation Brasil</span></p>
+            </li>
+            <li>
+              <p><b>moderadores: </b> <span class="link-color">Aimée, César, Jeff, Geandro, Yuri</span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div>
+        <div class="section-title">
+          <h3>Formatura da Turma 56!</h3>
+          <p>42 membros</p>
+        </div>
+        <div class="section-links">
+          <ul>
+            <li><span class="link-color-weight">comunidade</span></li>
+            <li>
+              <p>fórum</p>
+            </li>
+            <li>
+              <p>enquetes</p>
+            </li>
+            <li>
+              <p>membros</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="section-actions">
+              <p>Ações</p>
+            </li>
+            <li><span class="link-color-weight">Participar da comunidade</span></li>
+            <li>
+              <p>Denunciar abuso</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="forum">
+        <div class="forum-box">
+          <h2>Fórum</h2>
+        </div>
+        <div class="forum-content">
+          <img src="./assets/garfield.jpg" alt="">
+          <ul>
+            <li>Eu Odeio Codar Cedo</li>
+            <li>
+              <p>1 resposta. Acordar todo dia às 8h... 16/06/2010</p>
+            </li>
+          </ul>
+          <hr>
+          <img src="./assets/java.png" alt="">
+          <ul>
+            <li>Java Puro Igual Pinga Pura</li>
+            <li>
+              <p>3 respostas. Meu Eclipse não abre mais... 20/06/2009</p>
+            </li>
+          </ul>
+          <hr>
+          <p class="topics">ver todos os tópicos</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var i = 0;
+      var images = [];
+      var time = 3000;
+
+      //Image list
+      images[0] = './assets/turma01.JPG'
+      images[1] = './assets/turma02.JPG'
+      images[2] = './assets/turma03.JPG'
+      images[3] = './assets/turma04.JPG'
+
+      //Change image
+      function changeImg() {
+        document.slide.src = images[i];
+
+        if (i < images.length - 1) {
+          i++
+        } else {
+          i = 0;
+        }
+
+        setTimeout("changeImg()", time);
+      }
+
+      window.onload = changeImg;
+
+    </script>
+
+</body>
+
+</html>
